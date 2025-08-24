@@ -24,6 +24,8 @@ char *sbrk(int);
 int sleep(int);
 int uptime(void);
 int getreadcount(void);
+int setscheduler(int);
+int setprocshare(int, int);
 
 // ulib.c
 int stat(const char *, struct stat *);

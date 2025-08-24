@@ -12,6 +12,7 @@ OBJS = \
 	log.o\
 	main.o\
 	mp.o\
+	rand.o\
 	picirq.o\
 	pipe.o\
 	proc.o\
@@ -176,6 +177,7 @@ UPROGS=\
 	_ls\
 	_mkdir\
 	_rm\
+	_schedtest\
 	_sh\
 	_stressfs\
 	_usertests\
