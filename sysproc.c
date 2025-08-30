@@ -132,3 +132,17 @@ int sys_setprocshare(void)
   release(&ptable.lock);
   return -1;
 }
+
+int sys_mmap(void)
+{
+  return (int)mmap();
+}
+
+int sys_munmap(void)
+{
+  void *va;
+  if (argint(0, (int *)&va) < 0)
+    return -1;
+
+  return munmap(va) == -1;
+}

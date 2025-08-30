@@ -176,6 +176,7 @@ UPROGS=\
 	_ln\
 	_ls\
 	_mkdir\
+	_mmaptest\
 	_rm\
 	_schedtest\
 	_sh\

@@ -10,9 +10,10 @@ void busywork(int *counter, int duration)
     // Work until duration ticks have passed
     while (uptime() - start < duration)
     {
+        (*counter)++; // Use counter here to prevent from overflow
         // Do some computation to burn CPU cycles
-        for (int i = 0; i < 100; i++)
-            (*counter)++;
+        for (int i = 0; i < 10000; i++)
+            ;
     }
 }
 

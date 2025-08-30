@@ -26,6 +26,8 @@ int uptime(void);
 int getreadcount(void);
 int setscheduler(int);
 int setprocshare(int, int);
+void *mmap();
+int munmap(void *);
 
 // ulib.c
 int stat(const char *, struct stat *);

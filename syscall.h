@@ -23,3 +23,5 @@
 #define SYS_getreadcount 22
 #define SYS_setscheduler 23
 #define SYS_setprocshare 24
+#define SYS_mmap 25
+#define SYS_munmap 26
